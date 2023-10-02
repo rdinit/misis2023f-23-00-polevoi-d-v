@@ -11,4 +11,5 @@ int main() {
   } else {
     std::cout << "NO\n";
   }
+  return 0;
 }
