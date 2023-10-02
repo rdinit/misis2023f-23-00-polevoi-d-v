@@ -1,7 +1,5 @@
-add_executable(0004a 0004a.cpp)
-#add_executable(0004a.v01 0004a.v01.cpp)
-#add_executable(0004a.v02 0004a.v02.cpp)
-
+add_executable(0004a.v01 0004a.v01.cpp)
+add_executable(0004a.v02 0004a.v02.cpp)
 add_executable(0271a 0271a.cpp)
 add_executable(0276a 0276a.cpp)
 add_executable(0617a.v01 0617a.v01.cpp)
