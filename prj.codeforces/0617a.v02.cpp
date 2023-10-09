@@ -1,4 +1,4 @@
-// 2023 by Polevoy Dmitry
+// 2023 by Polevoi Dmitry
 // task source https://codeforces.com/problemset/problem/617/A
 //
 
