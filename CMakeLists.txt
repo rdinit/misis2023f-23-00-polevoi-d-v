@@ -27,3 +27,12 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG "D:/.dima/2023-misis-check/misis2023f-2
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE "D:/.dima/2023-misis-check/misis2023f-23-00-polevoi-d-v/bin.check")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELWITHDEBINFO "D:/.dima/2023-misis-check/misis2023f-23-00-polevoi-d-v/bin.relwithdbg")
 add_subdirectory(prj.check)
+
+set(CMAKE_CXX_STANDARD 20)
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+set_property(GLOBAL PROPERTY PREDEFINED_TARGETS_FOLDER cmake)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "D:/.dima/2023-misis-check/misis2023f-23-00-polevoi-d-v/bin")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG "D:/.dima/2023-misis-check/misis2023f-23-00-polevoi-d-v/bin.dbg")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE "D:/.dima/2023-misis-check/misis2023f-23-00-polevoi-d-v/bin.check")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELWITHDEBINFO "D:/.dima/2023-misis-check/misis2023f-23-00-polevoi-d-v/bin.relwithdbg")
+add_subdirectory(prj.check)
