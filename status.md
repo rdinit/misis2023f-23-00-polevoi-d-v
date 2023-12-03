@@ -1,8 +1,9 @@
-CHECK: 20231203-165940
+CHECK: 20231203-170106
 OK: file codeforces.id is correct
 OK: folder prj.codeforces structure is correct
 ERROR: file prj.lab/rational/CMakeLists.txt is absent
-ERROR: CMake generator failed
+OK: CMake generator successed
+OK: CMake build (MSVC x64) successed
 ERROR: lab complex - test build failed
 STATUS: lab rational - skipped
 STATUS: lab dynarr - skipped
