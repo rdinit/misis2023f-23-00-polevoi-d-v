@@ -34,4 +34,7 @@
 # MS Visual Studio Folders
 .vs
 out
-build
+
+# custom build folders
+bin.*
+build.*

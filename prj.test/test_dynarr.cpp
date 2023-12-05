@@ -1,24 +1,7 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
 
-#include <cstddef>
-
-class DynArr {
-  public:
-    DynArr() = default;
-    DynArr(const DynArr&) = default;
-    DynArr(const std::ptrdiff_t size) : size_(size) { }
-    ~DynArr() = default;
-    [[nodiscard]] DynArr& operator=(const DynArr&) = default;
-  
-    [[nodiscard]] std::ptrdiff_t Size() const noexcept { return size_; }
-    void Resize(const std::ptrdiff_t size) { size_ = size; }
-    [[nodiscard]] float& operator[](const std::ptrdiff_t idx) { return data_; }
-    [[nodiscard]] const float& operator[](const std::ptrdiff_t idx) const { return data_; }
-private:
-    std::ptrdiff_t size_ = 0; //!< число элементов в массиве
-    float data_ = 0;          //!< элементы массива
-};
+#include <dynarr/dynarr.hpp>
 
 TEST_CASE("dynarr ctor") {
   DynArr arr_def;
@@ -27,6 +10,9 @@ TEST_CASE("dynarr ctor") {
   const int size = 5;
   DynArr arr_s(size);
   CHECK_EQ(arr_s.Size(), size);
+
+  CHECK_THROWS(void(DynArr(0)));
+  CHECK_THROWS(void(DynArr(-size)));
 }
 
 TEST_CASE("dynarr op[]") {
@@ -34,4 +20,6 @@ TEST_CASE("dynarr op[]") {
   DynArr arr(size);
   CHECK_EQ(arr[0], 0);
   CHECK_EQ(arr[arr.Size() - 1], 0);
+  CHECK_THROWS(arr[-1]);
+  CHECK_THROWS(arr[arr.Size()]);
 }
