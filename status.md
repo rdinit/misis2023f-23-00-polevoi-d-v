@@ -1,8 +1,4 @@
-CHECK: 20231217-140715
-OK: file codeforces.id is correct
-OK: folder prj.codeforces structure is correct
-OK: CMake generator successed
-OK: CMake build (MSVC x64) successed
+CHECK: 20231217-141550
 STATUS: lab complex - test-ok
 STATUS: lab complex_io - skipped
 STATUS: lab rational - test-failed
