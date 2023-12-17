@@ -1,6 +1,2 @@
-CHECK: 20231217-141633
-STATUS: lab complex - test-ok
+CHECK: 20231217-141932
 STATUS: lab complex_io - skipped
-STATUS: lab rational - test-failed
-STATUS: lab rational_io - skipped
-STATUS: lab dynarr - test-failed
