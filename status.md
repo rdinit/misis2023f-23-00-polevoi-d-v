@@ -1,4 +1,4 @@
-CHECK: 20231220-113833
+CHECK: 20231223-120755
 STATUS: lab complex - test-ok
 STATUS: lab complex_io - test-failed
 STATUS: lab rational - test-failed
