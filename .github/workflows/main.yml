@@ -1,0 +1,11 @@
+name: test_running
+
+on:
+  workflow_dispatch
+
+permissions:
+  contents: write
+
+jobs:
+  call-workflow-1-in-local-repo:
+    uses: rdinit/autoamting_full_tests/.github/workflows/run_tests.yaml@main
